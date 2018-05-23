@@ -15,7 +15,7 @@ function grid() {
       this.style.background = '#212121';
     });
 
-    document.querySelector('.info').textContent = `${size} x ${size} grid`;
+    document.querySelector('.info').textContent = `${size} x ${size}`;
 
     gridItem.addEventListener('mousemove', function (e) {
       //left mouse button down
