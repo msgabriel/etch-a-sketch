@@ -11,7 +11,7 @@ function grid() {
     gridItem.style.height = (600 / size) + "px";
     gridItem.style.width = (600 / size) + "px";
 
-    gridItem.addEventListener('click', function(e) {
+    gridItem.addEventListener('click', function (e) {
       this.style.background = '#212121';
     });
 
@@ -42,6 +42,12 @@ resize.addEventListener('click', function (e) {
 
 let reset = document.getElementById('reset');
 reset.addEventListener('click', function (e) {
-  container.innerHTML = "";
-  grid();
+  if (confirm('are you sure?')) {
+    
+    while(container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+    
+    grid();
+  }
 })
