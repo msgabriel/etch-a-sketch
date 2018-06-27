@@ -1,5 +1,6 @@
 let size = 16;
-let container = document.querySelector('.grid');
+const container = document.querySelector('.grid');
+const colorPicker = document.querySelector('#color');
 
 function grid() {
 
@@ -11,20 +12,20 @@ function grid() {
     gridItem.style.height = (600 / size) + "px";
     gridItem.style.width = (600 / size) + "px";
 
-    gridItem.addEventListener('click', function (e) {
-      this.style.background = '#212121';
-    });
-
     document.querySelector('.info').textContent = `${size} x ${size}`;
+
+    gridItem.addEventListener('click', function (e) {
+      this.style.background = colorPicker.value;
+    });
 
     gridItem.addEventListener('mousemove', function (e) {
       //left mouse button down
       if (e.buttons == 1) {
-        this.style.background = '#212121';
+        this.style.background = colorPicker.value;
       }
       //right mouse button down
       if (e.buttons == 2) {
-        this.style.background = '#ccc';
+        this.style.background = '#f4f5f9';
       }
     });
   }

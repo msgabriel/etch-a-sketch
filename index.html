@@ -6,19 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Etch-A-Sketch</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container">
     <h1>Etch-A-Sketch</h1>
-    <button id="reset" class="btn reset">reset</button>
-    <button id="resize" class="btn">new grid</button>
+    <p>drag LMB to draw and RMB to erase</p>
+    <div class="buttons">
+      <button id="reset" class="btn reset">reset</button>
+      <button id="resize" class="btn">new grid</button>
+      <input id="color" type="color" value="#313131">
+    </div>
 
     <div class="grid" oncontextmenu="return false;"></div>
-    <p><strong>instructions:</strong> LMB to draw &amp; RMB to erase
-      &nbsp; <strong>current grid:</strong> <span class="info"></span></p>
+    <p>
+      <strong>current grid:</strong>
+      <span class="info"></span>
+    </p>
 
   </div>
 
