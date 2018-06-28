@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Silkscreen';
+  src: url(/font/slkscr.ttf);
+}
+
 body,html {
   margin: 0;
   padding: 0;
@@ -10,27 +15,23 @@ html {
 * {
   box-sizing: border-box;
 }
-strong {
-  font-weight: 600;
-}
 
 h1, p {
   margin: 0;
 }
 
 body {
-  background: #512645;
+  background: #a3c9c7;
   color: #fff;
-  font: 14px 'Open Sans', sans-serif;
+  font: 14px 'Silkscreen', monospace;
   letter-spacing: 1px;
   display: table-cell;
   vertical-align: middle;
 }
 
 h1 {
-  font-weight: 600;
   font-size: 1.3em;
-  text-transform: uppercase;
+  line-height: 2;
 }
 
 .container {
@@ -53,6 +54,7 @@ h1 {
   cursor: pointer;
   width: 600px;
   height: 600px;
+  box-shadow: 2px 2px 4px #00000020;
   
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -61,31 +63,24 @@ h1 {
 }
 
 .grid-item {
-  background: #f4f5f9;
-  border: 1px solid #512645;
+  background: #ffffff30;
+  border: 1px solid #fff;
   float: left;
 }
 
 .btn {
-  background: #df405a;
-  border: none;
+  background: #ffffff30;
+  border: 1px solid #fff;
   color: #fff;
   font: inherit;
   letter-spacing: 1px;
-  font-weight: 600;
-  text-transform: uppercase;
   padding: 0.5em 2em;
   cursor: pointer;
-  border-radius: 3px;
-
+  box-shadow: 2px 2px 3px #00000020;
 }
 
 .btn:hover {
-  box-shadow: 1px 1px 10px #00000040;
-}
-
-.reset {
-  background: #777;
+  background: #ffffff50;
 }
 
 input[type="color"] {

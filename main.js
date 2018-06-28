@@ -25,7 +25,7 @@ function grid() {
       }
       //right mouse button down
       if (e.buttons == 2) {
-        this.style.background = '#f4f5f9';
+        this.style.background = '#ffffff30';
       }
     });
   }
