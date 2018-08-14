@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Silkscreen';
-  src: url(../font/slkscr.ttf);
+  src: url(./font/slkscr.ttf);
 }
 
 body,html {
@@ -23,7 +23,7 @@ h1, p {
 body {
   background: #a3c9c7;
   color: #fff;
-  font: 14px 'Silkscreen', monospace;
+  font: 13px 'Silkscreen', monospace;
   letter-spacing: 1px;
   display: table-cell;
   vertical-align: middle;
